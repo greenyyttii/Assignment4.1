@@ -1,0 +1,25 @@
+'0': 'name: GitHub Actions Demo'
+'1': 'on: [push]'
+'2': 'jobs:'
+'3': 'Explore-GitHub-Actions:'
+'4': 'runs-on: ubuntu-latest'
+'5': 'steps:'
+'6': >-
+  - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name
+  }} event."
+'7': >-
+  - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by
+  GitHub!"
+'8': >-
+  - run: echo "🔎 The name of your branch is ${{ github.ref }} and your
+  repository is ${{ github.repository }}."
+'9': '- name: Check out repository code'
+'10': 'uses: actions/checkout@v2'
+'11': >-
+  - run: echo "💡 The ${{ github.repository }} repository has been cloned to the
+  runner."
+'12': '- run: echo "🖥️ The workflow is now ready to test your code on the runner."'
+'13': '- name: List files in the repository'
+'14': 'run: |'
+'15': ls ${{ github.workspace }}
+'16': '- run: echo "🍏 This job''s status is ${{ job.status }}."'
